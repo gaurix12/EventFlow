@@ -1,0 +1,249 @@
+/* Global resets and base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: #2c3e50;
+}
+
+button {
+  padding: 8px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+input, select {
+  padding: 8px;
+  margin: 6px 0;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+nav {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 1rem 2rem;
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+nav button {
+  margin-left: 10px;
+}
+
+/* Home Page */
+.home-container {
+  text-align: center;
+  padding: 50px;
+}
+
+.nav-buttons {
+  margin-top: 20px;
+}
+
+.nav-buttons button {
+  margin: 0 10px;
+}
+
+/* Events Page */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.event-list-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.event-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.event-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  flex: 1 1 calc(50% - 40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  min-width: 300px;
+}
+
+.event-card h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.event-card p {
+  margin: 6px 0;
+}
+
+.view-event-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Admin & Forms */
+.auth-container, form {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+/* Event Details Page */
+.event-details-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.event-details-container h2 {
+  margin-bottom: 10px;
+}
+
+.event-details-container p {
+  margin: 6px 0;
+  line-height: 1.5;
+}
+
+.register-section input {
+  margin-bottom: 10px;
+}
+
+.cancel-btn {
+  background-color: #e74c3c;
+}
+
+.cancel-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Registration List for Admin */
+.registration-list {
+  margin-top: 20px;
+  background: #f2f2f2;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.registration-list li {
+  margin-bottom: 8px;
+}
+
+/* User Dashboard */
+.dashboard-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.dashboard-container ul {
+  padding-left: 20px;
+}
+.home-container {
+  text-align: center;
+  padding: 40px 20px;
+  color: #f1f1f1;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #09102e;
+}
+
+.nav-buttons button,
+.cta-buttons button {
+  margin: 10px;
+  padding: 12px 24px;
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-buttons button:hover,
+.cta-buttons button:hover {
+  background-color: #1565c0;
+}
+
+.features-section,
+.about-section,
+.cta-section {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features-section h2,
+.about-section h2,
+.cta-section h2 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.features-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.features-list li {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #cccccc;
+}
